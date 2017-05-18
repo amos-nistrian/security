@@ -1,0 +1,25 @@
+To get geolocation and output to a file
+	/Users/Amos/Documents/security/whereami >/Users/Amos/Documents/security/location.txt;
+
+To get take photo
+	imagesnap -q -w 1 snap2.png
+// saves these in /Users/Amos
+TODO: move these files w the mv command
+
+Check if a user typed in an incorrect password:
+
+	This will show the last 5 minutes of messages
+		
+		log show -style syslog -last 5m //this is without searching for "Invalid credentials"
+
+		log show --predicate 'eventMessage CONTAINS "Invalid credentials"' --style syslog -last 5m
+
+
+	To watch a log file using, e.g.
+
+         tail -f /var/log/system.log
+
+
+
+
+
